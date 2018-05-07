@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <!--     使用最新的IE浏览器版本
+     -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <title>评论区</title>
+  <!-- zui -->
+  <link href="css/zui.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"></head>
+<body>
+  <!--提示用户IE7及更早版本的用户-->
+  <!--[if lt IE 8]>
+  <div class="alert alert-danger">
+    您正在使用 <strong>过时的</strong>
+    浏览器，是时候
+    <a href="http://browsehappy.com/">更换一个更好的浏览器</a>
+    来提升用户体验.
+  </div>
+  <![endif]-->
+  <!--在 dist/lib/ieonly/ 中准备了一些 Polyfill 脚本来兼容IE8浏览器。-->
+  <!--[if lt IE 9]>
+  <script src="lib/ieonly/html5shiv.js"></script>
+  <![endif]-->
+  <!--因为IE8及早期版本同样不支持media query来实现响应式布局，我们同样可以通过条件注释引入respond.js来帮助ie实现该功能。-->
+  <!--[if lt IE 8]>
+  <script type="text/javascript" src="lib/ieonly/respond.js"></script>
+  <![endif]-->
+  <!--因为IE8及早期版本不支持Canvas，如果你的产品用到ZUI中的 图表 视图，则需要引入 ExplorerCanvas 来支持绘图功能。-->
+  <!--[if lt IE 9]>
+  <script src="lib/ieonly/excanvas.js"></script>
+  <![endif]-->
+  <!--ZUI 中提供了三种布局容器来适应不同的布局方式：响应式布局（container）、液态化布局（流式布局ccontainer-fluid）、固定宽度布局(.container-fixed   1160px
+.container-fixed-md   960px
+.container-fixed-sm   740px
+.container-fixed-xs   440px)。-->
+  <div class="container-fluid
+  ">
+    <header>
+      <div class="container-fluid ">
+        <div class="header-left" >
+          <a href="index.html"> <i class="icon icon-chevron-left "></i>
+          </a>
+        </div>
+        <div class="text-center  header-middle">评论区</div>
+        <div class="header-right">
+          <a href="chatComments.html"> <i class="icon icon-edit "></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid  body_content
+  ">
+          <div class="comment">
+      <a href="###" class="avatar">
+        <i class="icon-camera-retro icon-2x"></i>
+      </a>
+      <div class="content">
+        <div class="pull-right text-muted">3 个小时前</div>
+        <div><a href="###"><strong>张士超</strong></a></div>
+        <div class="text">今天玩的真开心！~~~~~~</div>
+        <div class="actions">
+          <a href="##">回复</a>
+        </div>
+      </div>
+      <div class="comments-list">
+        <div class="comment">
+          <a href="###" class="avatar">
+            <i class="icon-user icon-2x"></i>
+          </a>
+          <div class="content">
+            <div class="pull-right text-muted">2 个小时前</div>
+            <div><a href="###"><strong>Catouse</strong></a> <span class="text-muted">回复</span> <a href="###">张士超</a></div>
+            <div class="text">你到底把我家钥匙放哪里了...</div>
+            <div class="actions">
+              <a href="##">回复</a>
+              <a href="##">编辑</a>
+              <a href="##">删除</a>
+            </div>
+          </div>
+          <div class="comments-list">
+            <div class="comment">
+              <a href="###" class="avatar">
+                <i class="icon-yinyang icon-2x"></i>
+              </a>
+              <div class="content">
+                <div class="pull-right text-muted">1 个小时前</div>
+                <div><a href="###"><strong>门口大爷</strong></a> <span class="text-muted">回复</span> <a href="###">Catouse</a></div>
+                <div class="text">不在我这儿...</div>
+                <div class="actions">
+                  <a href="##">回复</a>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a href="###" class="avatar">
+                <i class="icon-cube-alt icon-2x"></i>
+              </a>
+              <div class="content">
+                <div class="pull-right text-muted">1 个小时前</div>
+                <div><a href="###"><strong>队长</strong></a> <span class="text-muted">回复</span> <a href="###">Catouse</a></div>
+                <div class="text">也不在我这儿...</div>
+                <div class="actions">
+                  <a href="##">回复</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <a href="###" class="avatar">
+            <i class="icon-heart-empty icon-2x"></i>
+          </a>
+          <div class="content">
+            <div class="pull-right text-muted">30 分钟前</div>
+            <div><a href="###"><strong>华师大第一美女</strong></a> <span class="text-muted">回复</span> <a href="###">张士超</a></div>
+            <div class="text">很开心~~~</div>
+            <div class="actions">
+              <a href="##">回复</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <!-- ZUI Javascript组件 -->
+  <script src="js/zui.min.js"></script>
+  <!--配色方案-->
+  <script src="lib/colorset/zui.colorset.min.js"></script>
+  <!--自定义的input清空按钮的js-->
+  <script src="js/clearInput.js"></script>
+</body>
+</html>

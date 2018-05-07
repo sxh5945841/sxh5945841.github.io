@@ -1,0 +1,181 @@
+ body{
+       font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+       background: #E5E5E5;
+       margin: 0px;
+     } 
+/* header */
+header{
+	display: block;
+    margin-left: -10px;
+    margin-right: -10px;
+	color:#dddddd;
+	background:#3280FC;
+	padding: 10px;
+	position: relative;
+	border-bottom:1px solid #E5E5E5;
+	box-shadow: -3px 5px 3px left;
+}
+header .header-middle{
+	font-size: 16px;
+}
+header .header-left{
+	font-size: 16px;
+	position: absolute;
+	left:5px;
+}
+header .header-right{
+	font-size: 16px;
+	position: absolute;
+	right:6px;
+	top:10px;
+}
+header .header-left a,header .header-right a{
+	color:#dddddd;
+}
+header .header-right a i{
+	 font-size:16px;
+}
+header .header-left a:hover,header .header-left a:visited,header .header-right a:hover,header .header-right a:visited{
+	color:#dddddd;
+	text-decoration: none;
+}
+/* form琛ㄥ崟 */
+.body_content{
+	margin-top: 20px;
+}
+#login .form_body,#regist .form_body{
+	margin-bottom: 0px;
+	position: relative;
+}
+ #login .form_body input,#regist .form_body input,#identify input{
+	width:100%;
+	border:0px;
+	height:40px;
+	padding-left:20px;
+} 
+.#identify .form_body{
+	margin-bottom: 20px;
+}
+/* input娓呯┖鎸夐挳鐨勫疄鐜�*/
+ #login .input_clear , #regist .input_clear{
+ 	position: absolute;
+ 	right:50px;
+ 	top:12px;
+ 	color:#3280FC;
+ 	font-size: 16px;
+    display: none;  
+}
+/*  < 鎸夐挳 */
+.icon-chevron-left{
+	color:#dddddd;
+	font-size: 14px;
+}
+/* 棣栭〉footer */
+footer{
+	display: block;
+    margin-bottom: 0px;
+    height: 50px;
+}
+footer>ul>li{
+	width:25%;
+	/* height:60px; */
+	float: left;
+	color:#dddddd;
+	background:#3280FC;
+	text-align: center;
+	font-size: 16px;
+}
+footer>ul>li>a{
+	display: inline-block;
+	padding: 5px;
+   color:#dddddd;
+   font-size: 16px;
+}
+footer>ul>li>a:hover{
+ color:#3280FC;
+ text-decoration: none;
+}
+footer>ul>li>a:visited{
+ color:#dddddd;
+}
+/* */
+.panel-group{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.panel>.panel-header{
+   border-bottom:1px solid #E5E5E5;
+}
+.panel-footer{
+	font-size: 14px;
+	color:#3280FC;
+    height:40px;
+}
+.panel-footer a{
+	color:#3280FC;
+}
+.panel-footer a:hover{
+	text-decoration: none;
+}
+.panel-footer-right .comment {
+ display: inline-block;
+ padding: 0px;
+ 
+}
+.praise{
+	cursor: pointer;
+}
+/* friends margin-top:0px; */
+.list{
+  margin:-18px -20px 0px -20px;
+   background: #ffffff;
+}
+.items .item{
+	padding: 5px 10px 5px 10px;
+	margin-right:-20px;
+	margin-left:-20px;
+
+}
+.item_content_left{
+	display: inline-block;
+	margin-top: -15px;
+}
+.item_content_middle{
+	padding-left: 20px;
+	display: inline-block;
+}
+.item_content_middle h3{
+	font-size:16px;
+	font-weight: 100px;
+}
+.item_content_middle h3 span{
+	font-size: 14px;
+	color:#dddddd
+}
+/* me */
+.item-content h3 .switch {
+ font-size:16px;
+	font-weight: 100px;
+}
+.btn_logout{
+	margin:20px -20px 0px -20px;
+}
+.btn_logout >button{
+	color:red;
+}
+.btn_logout >button:hover{
+	color:red;
+}
+/* comments */
+.panel-footer-right{
+	position:relative;
+}
+.panel-footer-right a.comments{
+	background: #ffffff;
+	display:inline;
+}/* 
+//发表秘密 */
+textarea.secret_content{
+	margin-top:20px;
+	border:1px solid #E5E5E5;
+}
